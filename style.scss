@@ -10,6 +10,33 @@ $clr-gray-strong: rgb(234, 234, 234);
 $logo-font: "Shrikhand";
 $font: "Roboto", sans-serif;
 $clr-gray-light: rgb(246, 246, 246);
+$gray-text: rgb(75, 75, 75);
+
+.h2{
+    font: 28px 700;
+}
+
+.title{
+    font-family: $logo-font;
+    font-size: 35px;
+
+}
+
+@mixin btn-gradient{
+    background: linear-gradient(356deg, rgba(129,91,175,1) 0%, rgba(255,121,218,1) 100%);
+    align-self: center;
+    color: white;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: $clr-shadows 0px 7px 7px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    
+}
 
 .flex {
     display:flex;
@@ -22,9 +49,8 @@ header{
     padding: 10px 0px 15px;
 
     .logo{
-        font-family: $logo-font;
         text-align: center;
-        font-size: 35px;
+        @extend .title;
     }
 }
 
@@ -35,7 +61,7 @@ header{
 
     p{
         font-family: $font;
-        color: rgb(75, 75, 75);
+        color: $gray-text;
         font-size: 18px;
         font-weight: 700;
         text-align: center;
@@ -53,25 +79,15 @@ header{
     justify-content: center;
     width: 100%;
     h2{
-        font-weight:700;
-        font-size: 28px;
         margin:0% 15%;
         text-align: center;
         padding-top: 20px;
+        @extend .h2;
+        
         
     }
         .btn{
-            background: linear-gradient(356deg, rgba(129,91,175,1) 0%, rgba(255,121,218,1) 100%);
-            align-self: center;
-            color: white;
-            width: 250px;
-            height: 60px;
-            text-align: center;
-            justify-content: center;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 50px;
+            @include btn-gradient;
         }
 }
 .explorer p{
@@ -81,5 +97,105 @@ header{
         text-align: center;
         font-size: 20px;
         color: rgb(75, 75, 75);
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
+.notice{
+    width: 85%;
+    padding-bottom: 30px;
+    h2{
+        margin-left:30px;
+        margin-top: 50px;
+        }
+        ol{
+            list-style: none;
+            counter-reset: notice-list;
+            margin-left: 5px;
+            justify-content: space-between;
+            li{
+                background-color: $clr-gray-light;
+                border-radius: 25px;
+                box-shadow: $clr-shadows 2px 4px 12px 0px;
+                padding: 25px 0px;
+                margin-bottom: 25px;
+                counter-increment: notice-list;
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                font-weight: 700;
+                &::before{
+                    content: counter(notice-list);
+                    list-style-position: outside;
+                    width: 27px;
+                    height: 28px;
+                    font-weight: 500;
+                    border-radius: 50%;
+                    display: inline-block;
+                    line-height: 28px;
+                    color: white;
+                    text-align: center;
+                    background: $clr-primary;
+                    transform: translateX(-15px);
+            }
+
+            i{
+                color: $gray-text;
+                font-size:20px;
+                min-width: 20px;
+                padding-right: 25px;
+                padding-left: 10px;
+
+            }
+            span{
+                text-align: center;
+            }
+        }
+    }
+}
+section {
+    background-color: $clr-gray-light;
+    h2{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .cards{
+        align-items: center;
+        flex-wrap: wrap;
+
+        .card {
+            width:88%;
+            height: 280px;
+            border-radius: 25px;
+            max-width:420px;
+            box-shadow:$clr-shadows 2px 4px 12px 0px;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            &:nth-child(1) img{
+                object-position: 0px -48px;
+            }
+            &:nth-child(2) img{
+                object-position: 0px -168px;
+            }
+            &:nth-child(3) img{
+                object-position: 0px -47px;
+            }
+            &:nth-child(4) img{
+                object-position: 0px -44px;
+            }
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+            }
+            .crd-txt{
+                flex-wrap: wrap;
+                max-height: max-content;
+                h3{
+                    margin: 0px 0px 0px 5px;
+                }
+                p{
+                    margin: 0px 0px 0px 5px;
+                }
+            }
+        }
+    }
+}
