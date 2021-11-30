@@ -1,0 +1,58 @@
+section {
+    background-color: $clr-gray-light;
+    h2{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .cards {
+        align-items: center;
+        flex-wrap: wrap;
+
+        .card {
+            width:88%;
+            height: 280px;
+            border-radius: 25px;
+            max-width:420px;
+            box-shadow:$clr-shadows 2px 4px 12px 0px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+        
+            .new-restaurant {
+                position: absolute;
+                right: 20px;
+            }
+            .card-desc {
+                flex-direction: row;
+            }
+
+            &:nth-child(1) img {
+                object-position: 0px -48px;
+            }
+            &:nth-child(2) img {
+                object-position: 0px -168px;
+            }
+            &:nth-child(3) img {
+                object-position: 0px -47px;
+            }
+            &:nth-child(4) img {
+                object-position: 0px -44px;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 200px;
+            }
+            .crd-txt{
+                flex-wrap: wrap;
+                max-height: max-content;
+                h3{
+                    margin: 0px 0px 0px 5px;
+                }
+                p{
+                    margin: 0px 0px 0px 5px;
+                }
+            }
+        }
+    }
+}

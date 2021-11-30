@@ -1,0 +1,10 @@
+header{
+
+    padding: 10px 0px 15px;
+
+    .logo{
+        text-align: center;
+        @extend .title;
+    }
+}
+

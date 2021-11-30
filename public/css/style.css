@@ -1,17 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
-.h2, .explorer h2 {
-  font: 28px 700;
-}
-
 .title, header .logo {
   font-family: "Shrikhand";
   font-size: 35px;
-}
-
-.flex {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
 }
 
 header {
@@ -179,6 +169,16 @@ section .cards .card .crd-txt h3 {
 }
 section .cards .card .crd-txt p {
   margin: 0px 0px 0px 5px;
+}
+
+.h2, .explorer h2 {
+  font: 28px 700;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

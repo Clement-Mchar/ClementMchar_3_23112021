@@ -1,0 +1,19 @@
+.location{
+    background-color: $clr-gray-strong;
+    box-shadow: $clr-shadows inset 0px 13px 5px -10px;
+    
+
+    p{
+        font-family: $font;
+        color: $gray-text;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        transform: translateX(-10px);
+    
+
+        i{
+            transform: translateX(-15px);
+        }
+    }
+}
