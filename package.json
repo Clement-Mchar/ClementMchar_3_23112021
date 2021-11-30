@@ -1,0 +1,19 @@
+{
+  "name": "clementmchar_3_23112021",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clement-Mchar/ClementMchar_3_23112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clement-Mchar/ClementMchar_3_23112021/issues"
+  },
+  "homepage": "https://github.com/Clement-Mchar/ClementMchar_3_23112021#readme"
+}
