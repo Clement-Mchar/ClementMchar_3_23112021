@@ -48,19 +48,21 @@ header .logo {
   text-align: center;
   padding-top: 20px;
 }
-.explorer .btn {
+.explorer button {
   background: linear-gradient(356deg, #815baf 0%, #ff79da 100%);
   align-self: center;
   color: white;
   width: 250px;
   height: 60px;
-  text-align: center;
   justify-content: center;
   border-radius: 50px;
   box-shadow: #cecece 0px 7px 7px 0px;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 50px;
+  border: none;
+  align-items: center;
 }
 
 .explorer p {

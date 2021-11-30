@@ -28,13 +28,15 @@ $gray-text: rgb(75, 75, 75);
     color: white;
     width: 250px;
     height: 60px;
-    text-align: center;
     justify-content: center;
     border-radius: 50px;
     box-shadow: $clr-shadows 0px 7px 7px 0px;
+    font-family: $font;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 50px;
+    border: none;
+    align-items: center;
     
 }
 
@@ -86,7 +88,7 @@ header{
         
         
     }
-        .btn{
+        button{
             @include btn-gradient;
         }
 }
