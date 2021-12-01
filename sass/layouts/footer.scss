@@ -1,0 +1,26 @@
+footer {
+    color: white;
+    background-color: $grayest;
+    padding-top: 15px;
+    
+    .logo{
+        text-align: start;
+        @extend .title;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    ol{
+        margin-left:-20px;
+        font-family: $font;
+        .bolder{
+            font-weight: 500;
+        }
+        li{
+            padding-bottom: 5px;
+            
+            i{
+                padding-right: 15px;
+            }
+        }
+    }
+}

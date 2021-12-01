@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/7104ef3817.js" crossorigin="anonymous"></script>
-    <title>OhMyFood</title>
+    <title>ohmyfood</title>
 </head>
     <body>
         <div class="full-page flex">
@@ -43,10 +43,13 @@
                 <h2>Restaurants</h2>
                 <div class="cards flex">
                     <div onclick="location.href='#';" class="card flex">
+                        <p class="new-restaurant">Nouveau</p>
                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du Goût">
-                        <div class="crd-txt flex">    
-                            <h3>La Palette du Goût</h3>
-                            <p>Ménilmontant</p>
+                        <div class="card-desc flex">
+                            <div class="crd-txt flex">    
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>  
+                            </div>
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
@@ -55,7 +58,7 @@
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La Note Enchantée">
                         <div class="card-desc flex">
                             <div class="crd-txt flex">
-                                <h3>La Note Enchantée</h3>
+                                <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
                             <i class="far fa-heart"></i>
@@ -63,24 +66,41 @@
                     </div>
                     <div onclick="location.href='#';" class="card flex">
                         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-                        <div class="crd-txt flex">
-                            <h3>À la française</h3>
-                            <p>La Cité Rouge</p>
-                            <i class="far fa-heart"></i>
+                        <div class="card-desc flex">
+                            <div class="crd-txt flex">
+                                <h3>À la française</h3>
+                                <p>La Cité Rouge</p>
+                            </div>
+                                <i class="far fa-heart"></i>
                         </div>     
                     </div>
                     <div onclick="location.href='#';" class="card flex">
                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Délice des sens">
-                        <div class="crd-txt flex">
-                            <h3>Le Délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                            <i class="far fa-heart"></i>
-                        </div>    
+                        <div class="card-desc flex">
+                            <div class="crd-txt flex">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                                <i class="far fa-heart"></i>
+                        </div> 
+   
                     </div>   
                 </div>
 
             </section>
-
+            <footer class="flex">
+                <div class="logo flex">
+                    ohmyfood
+                </div>
+                <ol>
+                    <div class="bolder">
+                        <li><i class="fas fa-utensils fa-fw"></i>Proposer un restaurant</li>
+                        <li><i class="fas fa-handshake fa-fw"></i>Devenir partenaire</li>
+                    </div>
+                    <li>Mentions légales</li>
+                    <li>Contact</li>
+                </ol>
+            </footer>
         </div>
     </body>
 </html>
