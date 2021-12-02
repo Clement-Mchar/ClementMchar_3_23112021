@@ -10,11 +10,26 @@
     font-family: $font;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 50px;
     border: none;
     align-items: center;
     
 }
+@mixin main-font{
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+@mixin light-font{
+    font-family: $font;
+    font-weight: lighter;
+    font-size: 17px;
+    color: $gray-text;
+}
+@mixin shadows{
+    box-shadow:$clr-shadows 2px 4px 12px 0px;
+}
+
 .title{
     font-family: $logo-font;
     font-size: 35px;

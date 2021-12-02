@@ -17,8 +17,7 @@
                 margin-bottom: 25px;
                 counter-increment: notice-list;
                 color: rgb(0, 0, 0);
-                font-size: 18px;
-                font-weight: 700;
+                @include main-font;
                 &::before{
                     content: counter(notice-list);
                     list-style-position: outside;

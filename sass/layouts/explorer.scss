@@ -7,20 +7,22 @@
         margin:0% 15%;
         text-align: center;
         padding-top: 20px;
-        @extend .h2;
-        
+        font-size: 24px;
         
     }
-        button{
-            @include btn-gradient;
-        }
+    button{
+        @include btn-gradient;
+        margin-bottom: 50px;
+    }
 }
+
+
 .explorer p{
-        margin:0% 5%;
+        margin:0% 6%;
         font-weight: lighter;
         padding-top: 15px;
         text-align: center;
-        font-size: 20px;
-        color: rgb(75, 75, 75);
+        font-size: 18px;
+        color: $gray-text;
         margin-bottom: 30px;
     }

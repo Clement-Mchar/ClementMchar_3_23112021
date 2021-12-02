@@ -1,7 +1,7 @@
 section {
     background-color: $clr-gray-light;
     h2{
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 30px;
     }
     .cards {
@@ -9,7 +9,7 @@ section {
         flex-wrap: wrap;
 
         .card {
-            width:95%;
+            width:90%;
             height: 280px;
             border-radius: 25px;
             max-width:420px;
@@ -62,16 +62,14 @@ section {
                 max-height: max-content;
 
                 h3{
-                    font-family: $font;
                     margin: 0px 0px 5px 10px;
-                    font-size: 18px;
-                    font-weight: 700;
+                    @include main-font;
+
                 }
                 p{
                     margin: 0px 0px 0px 10px;
-                    font-weight: lighter;
-                    font-size: 17px;
-                    color: $gray-text;
+                    @include light-font;
+
 
                 }
             }

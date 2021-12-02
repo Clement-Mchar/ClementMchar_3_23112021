@@ -1,0 +1,84 @@
+img{
+    width: 100%;
+    max-width: 766px;
+}
+.menu{
+    background-color: $clr-gray-light;
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    max-width: 766px;
+    transform: translateY(-59px);
+    .titles{
+        width: max-content;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: lighter;
+        font-size: 16px;
+        color: $gray-text;
+        padding-left: 15px;
+        &::after{
+            content: "";  
+            display: block;
+            margin: 0; 
+            width: 45px; 
+            padding-top: 5px; 
+            border-bottom: 3px solid $clr-tertiary; 
+        }
+    }
+    .name{
+        @extend .title;
+        padding:30px 15px;
+        font-size: 32px;
+        
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        .heart{
+            font-size: 30px;
+            padding-right: 30px;
+            align-self: flex-end;
+        }
+    }
+    .display{
+        align-items: center;
+        margin-bottom: 20px;
+    
+        .dishes{
+        flex-direction: row;
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        width: 90%;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 15px;
+        @include shadows;
+        i{
+            display: none;
+        }
+        .price{
+            @include main-font;
+            font-size: 17px;
+        }
+        
+        .dish{
+            h3{
+                margin: 0px 0px 5px 0px;
+                @include main-font;
+                width: 280px;
+            }
+            p{
+                margin: 0px;
+                @include light-font;
+                font-size:16px;
+            }
+            
+        }
+    
+        }
+    }
+    button{
+        @include btn-gradient;
+        margin-top: 20px;
+    }
+}
