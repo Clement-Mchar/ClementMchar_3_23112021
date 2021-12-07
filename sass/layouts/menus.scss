@@ -1,12 +1,17 @@
+.full-page {
+    background:$clr-gray-light ;
+
+}
 img{
     width: 100%;
-    max-width: 766px;
+    max-width: 100%;
 }
+
 .menu{
     background-color: $clr-gray-light;
     border-radius: 25px 25px 0px 0px;
     width: 100%;
-    max-width: 766px;
+    min-width: 100%;
     transform: translateY(-59px);
     .titles{
         width: max-content;
@@ -16,52 +21,108 @@ img{
         font-size: 16px;
         color: $gray-text;
         padding-left: 15px;
-        &::after{
-            content: "";  
-            display: block;
-            margin: 0; 
-            width: 45px; 
-            padding-top: 5px; 
-            border-bottom: 3px solid $clr-tertiary; 
+        opacity: 0;
+        animation-name: appearance;
+        animation-direction: normal;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        &.dish{
+            animation-delay: 350ms;
         }
+        &.dessert{
+            animation-delay: 650ms;
+        }
+
+
     }
     .name{
         @extend .title;
         padding:30px 15px;
-        font-size: 32px;
+
         
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
         .heart{
-            font-size: 30px;
-            padding-right: 30px;
+            font-size: 28px;
+            padding-right: 8px;
             align-self: flex-end;
         }
     }
     .display{
         align-items: center;
         margin-bottom: 20px;
-    
+        min-width: 0px;
+
         .dishes{
         flex-direction: row;
+        overflow: hidden;
         background-color: white;
-        border-radius: 25px;
+        border-radius: 20px;
         margin-bottom: 20px;
         width: 90%;
+        height:43px;
         justify-content: space-between;
         align-items: flex-end;
         padding: 15px;
         @include shadows;
-        i{
+        cursor: pointer;
+        opacity: 0;
+        animation-name: appearance;
+        animation-direction: normal;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+                    @keyframes appearance{
+                0%{
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateY(0px);
+                    }
+                }
+                &.anim_1{
+                    animation-delay: 100ms;
+                }
+                &.anim_2{
+                    animation-delay: 200ms;
+                }
+                &.anim_3{
+                    animation-delay: 300ms;
+                }
+                &.anim_4{
+                    animation-delay: 400ms;
+                }
+                &.anim_5{
+                    animation-delay: 500ms;
+                }
+                &.anim_6{
+                    animation-delay: 600ms;
+                }
+                &.anim_7{
+                    animation-delay: 700ms;
+                }
+                &.anim_8{
+                    animation-delay: 800ms;
+                }
+                &.anim_9{
+                    animation-delay: 900ms;
+                }
+            }
+            .check{
             display: none;
-        }
+            }
+
+        }                  
         .price{
             @include main-font;
             font-size: 17px;
         }
         
         .dish{
+         
+            width: calc(90%);
             h3{
                 margin: 0px 0px 5px 0px;
                 @include main-font;
@@ -71,14 +132,20 @@ img{
                 margin: 0px;
                 @include light-font;
                 font-size:16px;
+                width: calc(97%);
+                white-space: nowrap;
+                overflow: hidden;
+                display: inline-block;
+                text-overflow: ellipsis;
             }
+
             
         }
     
         }
-    }
     button{
         @include btn-gradient;
         margin-top: 20px;
+        margin-bottom: 1%;
     }
-}
+

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
 .title, .menu .name, footer .logo, header .logo {
   font-family: "Shrikhand";
-  font-size: 35px;
+  font-size: 28px;
 }
 
 header {
@@ -53,7 +53,12 @@ header .logo {
   font-weight: 700;
   border: none;
   align-items: center;
+  cursor: pointer;
   margin-bottom: 50px;
+}
+.explorer button:hover {
+  filter: brightness(110%);
+  box-shadow: #9b9b9b 0px 7px 7px 0px;
 }
 
 .explorer p {
@@ -217,16 +222,20 @@ footer ol li i {
   padding-right: 15px;
 }
 
+.full-page {
+  background: #f6f6f6;
+}
+
 img {
   width: 100%;
-  max-width: 766px;
+  max-width: 100%;
 }
 
 .menu {
   background-color: #f6f6f6;
   border-radius: 25px 25px 0px 0px;
   width: 100%;
-  max-width: 766px;
+  min-width: 100%;
   transform: translateY(-59px);
 }
 .menu .titles {
@@ -237,67 +246,124 @@ img {
   font-size: 16px;
   color: #4b4b4b;
   padding-left: 15px;
+  opacity: 0;
+  animation-name: appearance;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
-.menu .titles::after {
-  content: "";
-  display: block;
-  margin: 0;
-  width: 45px;
-  padding-top: 5px;
-  border-bottom: 3px solid #99E2D0;
+.menu .titles.dish {
+  animation-delay: 350ms;
+}
+.menu .titles.dessert {
+  animation-delay: 650ms;
 }
 .menu .name {
   padding: 30px 15px;
-  font-size: 32px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 .menu .name .heart {
-  font-size: 30px;
-  padding-right: 30px;
+  font-size: 28px;
+  padding-right: 8px;
   align-self: flex-end;
 }
 .menu .display {
   align-items: center;
   margin-bottom: 20px;
+  min-width: 0px;
 }
 .menu .display .dishes {
   flex-direction: row;
+  overflow: hidden;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-bottom: 20px;
   width: 90%;
+  height: 43px;
   justify-content: space-between;
   align-items: flex-end;
   padding: 15px;
   box-shadow: #cecece 2px 4px 12px 0px;
+  cursor: pointer;
+  opacity: 0;
+  animation-name: appearance;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
-.menu .display .dishes i {
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu .display .dishes.anim_1 {
+  animation-delay: 100ms;
+}
+.menu .display .dishes.anim_2 {
+  animation-delay: 200ms;
+}
+.menu .display .dishes.anim_3 {
+  animation-delay: 300ms;
+}
+.menu .display .dishes.anim_4 {
+  animation-delay: 400ms;
+}
+.menu .display .dishes.anim_5 {
+  animation-delay: 500ms;
+}
+.menu .display .dishes.anim_6 {
+  animation-delay: 600ms;
+}
+.menu .display .dishes.anim_7 {
+  animation-delay: 700ms;
+}
+.menu .display .dishes.anim_8 {
+  animation-delay: 800ms;
+}
+.menu .display .dishes.anim_9 {
+  animation-delay: 900ms;
+}
+.menu .display .check {
   display: none;
 }
-.menu .display .dishes .price {
+.menu .price {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   font-size: 17px;
 }
-.menu .display .dishes .dish h3 {
+.menu .dish {
+  width: 90%;
+}
+.menu .dish h3 {
   margin: 0px 0px 5px 0px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   width: 280px;
 }
-.menu .display .dishes .dish p {
+.menu .dish p {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 17px;
   color: #4b4b4b;
   font-size: 16px;
+  width: 97%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
 }
-.menu button {
+
+button {
   background: linear-gradient(356deg, #815baf 0%, #ff79da 100%);
   align-self: center;
   color: white;
@@ -311,7 +377,13 @@ img {
   font-weight: 700;
   border: none;
   align-items: center;
+  cursor: pointer;
   margin-top: 20px;
+  margin-bottom: 1%;
+}
+button:hover {
+  filter: brightness(110%);
+  box-shadow: #9b9b9b 0px 7px 7px 0px;
 }
 
 .flex {
@@ -321,6 +393,10 @@ img {
 
 ol {
   list-style: none;
+}
+
+header {
+  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */

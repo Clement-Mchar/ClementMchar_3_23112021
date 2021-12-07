@@ -10,3 +10,5 @@ $clr-gray-light: rgb(246, 246, 246);
 $gray-text: rgb(75, 75, 75);
 $grayest: rgb(53, 53, 53);
 $clr-new: darken($clr-tertiary, 42%);
+$gradient: linear-gradient(356deg, rgba(129,91,175,1) 0%, rgba(255,121,218,1) 100%);
+$hover-shadow: darken($clr-shadows, 20%)
