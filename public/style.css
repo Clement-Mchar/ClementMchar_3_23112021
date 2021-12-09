@@ -276,14 +276,15 @@ img {
 }
 .menu .display .dishes {
   flex-direction: row;
-  background-color: white;
   overflow: hidden;
+  background-color: white;
   border-radius: 20px;
   margin-bottom: 20px;
-  flex-wrap: nowrap;
-  width: 96%;
-  height: 70px;
+  width: 90%;
+  height: 43px;
+  justify-content: space-between;
   align-items: flex-end;
+  padding: 15px;
   box-shadow: #cecece 2px 4px 12px 0px;
   cursor: pointer;
   opacity: 0;
@@ -329,80 +330,34 @@ img {
 .menu .display .dishes.anim_9 {
   animation-delay: 900ms;
 }
-.menu .display .dishes:hover .check {
-  height: 70px;
-  animation-name: check;
-  animation-duration: 500ms;
-  animation-fill-mode: both;
-  align-items: center;
-  justify-content: center;
-}
-@keyframes check {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 80px;
-  }
-}
-.menu .display .dishes:hover i {
-  animation-name: rotation;
-  animation-delay: 200ms;
-  animation-duration: 500ms;
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.menu .display .price {
+.menu .display .dishes .price {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   font-size: 17px;
-  padding-bottom: 11px;
-  margin-right: 20px;
-  margin-left: 20px;
 }
-.menu .display .dish {
+.menu .display .dishes .dish {
   width: 90%;
-  padding-left: 10px;
-  flex-wrap: nowrap;
-  align-self: center;
-  overflow: hidden;
 }
-.menu .display .dish h3 {
+.menu .display .dishes .dish h3 {
   margin: 0px 0px 5px 0px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
+  width: 280px;
 }
-.menu .display .dish p {
+.menu .display .dishes .dish p {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 17px;
   color: #4b4b4b;
   font-size: 16px;
+  width: 97%;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
-}
-.menu .display .check {
-  align-self: center;
-  width: 0px;
-  color: white;
-  background-color: #99E2D0;
-  font-size: 22px;
-  overflow: visible;
 }
 
 button {
