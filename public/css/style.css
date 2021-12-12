@@ -158,23 +158,19 @@ section .cards .card .card-desc {
   flex-direction: row;
   justify-content: space-between;
 }
-section .cards .card .card-desc i {
-  padding: 5px 25px 25px 25px;
-  font-size: 28px;
-}
-section .cards .card:nth-child(1) .photos {
+section .cards .card:nth-child(1) img {
   object-position: 0px -48px;
 }
-section .cards .card:nth-child(2) .photos {
-  object-position: 0px -141px;
+section .cards .card:nth-child(2) img {
+  object-position: 0px -150px;
 }
-section .cards .card:nth-child(3) .photos {
+section .cards .card:nth-child(3) img {
   object-position: 0px -47px;
 }
-section .cards .card:nth-child(4) .photos {
+section .cards .card:nth-child(4) img {
   object-position: 0px -44px;
 }
-section .cards .card .photos {
+section .cards .card img {
   object-fit: cover;
   width: 100%;
   height: 200px;
@@ -428,6 +424,35 @@ button:hover {
   box-shadow: #9b9b9b 0px 7px 7px 0px;
 }
 
+#lgrad {
+  --color-stop-1:rgb(129,91,175);
+  --color-stop-2: rgb(255,121,218);
+}
+
+svg {
+  width: 44px;
+  stroke: black;
+  stroke-width: 20px;
+  padding: 5px 25px 25px 25px;
+  fill: #f6f6f6;
+}
+svg:hover {
+  fill: url(#lgrad);
+  width: 47px;
+  stroke: none;
+  animation-name: fill;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   animation-name: no-scroll;
   animation-duration: 3s;
@@ -493,4 +518,4 @@ header {
   background: white;
 }
 
-/*# sourceMappingURL=syle.css.map */
+/*# sourceMappingURL=style.css.map */

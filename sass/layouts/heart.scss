@@ -1,0 +1,29 @@
+#lgrad{
+    --color-stop-1:rgb(129,91,175);
+    --color-stop-2: rgb(255,121,218);
+}
+svg{
+    width: 44px;
+    stroke: black;
+    stroke-width: 20px;
+    padding: 5px 25px 25px 25px;
+    fill: $clr-gray-light;
+    &:hover{
+        fill:url(#lgrad);
+        width: 47px;
+        stroke:none;
+        animation-name: fill;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        @keyframes fill{
+            from{
+                opacity: 0;
+                
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    }
+}
+
