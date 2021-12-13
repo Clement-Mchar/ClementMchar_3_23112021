@@ -6,6 +6,26 @@ img {
     width: 100%;
     max-width: 100%;
 }
+header{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    justify-content: center;
+    .arrow{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    h2{
+        font-family: $logo-font;
+        font-weight: 500;
+        font-size: 28px;
+        padding-top: 16px;
+    }
+}
 .menu {
     background-color: $clr-gray-light;
     border-radius: 25px 25px 0px 0px;
@@ -15,7 +35,7 @@ img {
     .titles {
         width: max-content;
         text-transform: uppercase;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         font-weight: lighter;
         font-size: 16px;
         color: $gray-text;
@@ -31,8 +51,15 @@ img {
         &.dessert{
             animation-delay: 650ms;
         }
-
-
+        &::before{
+            content: "";
+            position: absolute;
+            left: 16px;
+            bottom: -7px;
+            width: 45px;
+            height: 3px;
+            background-color: #99E2D0;
+        }
     }
     .name {
         @extend .title;
@@ -43,9 +70,7 @@ img {
         flex-direction: row;
         justify-content: space-between;
         .heart{
-            font-size: 28px;
             padding-right: 8px;
-            align-self: flex-end;
         }
     }
     .display {
@@ -60,6 +85,7 @@ img {
         border-radius: 20px;
         margin-bottom: 20px;
         flex-wrap: nowrap;
+        justify-content: space-between;
         width: 96%;
         height:70px;
         align-items: flex-end;
@@ -70,16 +96,7 @@ img {
         animation-direction: normal;
         animation-duration: 1100ms;
         animation-fill-mode: both;
-                    @keyframes appearance{
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translateY(0px);
-                    }
-                }
+
                 &.anim_1 {
                     animation-delay: 100ms;
                 }
@@ -126,15 +143,7 @@ img {
                     justify-content: center;
                 }
                     &:hover i{
-                        @keyframes rotation{
-                            0%{
-                            transform: rotate(0deg);
-        
-                            }
-                            100%{
-                             transform: rotate(360deg);
-                            }
-                        }
+
                             animation-name: rotation;
                             animation-delay:200ms;
                             animation-duration: 500ms;

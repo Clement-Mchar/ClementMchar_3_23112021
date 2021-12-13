@@ -6,24 +6,16 @@ svg{
     width: 44px;
     stroke: black;
     stroke-width: 20px;
-    padding: 5px 25px 25px 25px;
+
     fill: $clr-gray-light;
     &:hover{
         fill:url(#lgrad);
-        width: 47px;
+        width: 44px;
         stroke:none;
         animation-name: fill;
         animation-duration: 1s;
         animation-fill-mode: both;
-        @keyframes fill{
-            from{
-                opacity: 0;
-                
-            }
-            to{
-                opacity: 1;
-            }
-        }
+
     }
 }
 

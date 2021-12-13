@@ -1,14 +1,6 @@
 body{
     animation-name: no-scroll;
     animation-duration: 3s;
-    @keyframes no-scroll{
-        0%{
-        overflow: hidden;
-        }
-        100%{
-            overflow:hidden;
-        }
-    }
 
 }
 .full-page{
@@ -21,20 +13,7 @@ body{
         animation-duration: 3s;
         justify-content: center;
 
-        @keyframes loading{
-            0%{
-                height: 100%;
-                position: fixed;
-                width: 100%;
-                z-index: 999;
-            }
-            100%{
-                height: 100%;
-                position: fixed;
-                width: 100%;
-                z-index: 999;
-            }
-        }
+
         .spinner{
             font-size: 200px;
             color: $clr-tertiary;
@@ -42,14 +21,7 @@ body{
             animation-duration: 3s;
             animation-timing-function: ease-in-out;
             vertical-align: middle;
-            @keyframes spinner{
-                0%{
-                    transform:rotate(0deg)
-                }
-                100%{
-                    transform:rotate(1080deg)
-                }
-            }
+
         }
     }
 }
