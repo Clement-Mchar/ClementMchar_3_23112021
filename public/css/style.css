@@ -260,6 +260,10 @@ footer ol .bolder {
 footer ol li {
   padding-bottom: 5px;
 }
+footer ol li a {
+  text-decoration: none;
+  color: white;
+}
 footer ol li i {
   padding-right: 15px;
 }
@@ -481,7 +485,7 @@ button:hover {
   box-shadow: #9b9b9b 0px 7px 7px 0px;
 }
 
-#lgrad {
+.lgrad {
   --color-stop-1:rgb(129,91,175);
   --color-stop-2: rgb(255,121,218);
 }
@@ -493,7 +497,7 @@ svg {
   fill: #f6f6f6;
 }
 svg:hover {
-  fill: url(#lgrad);
+  fill: url(.lgrad);
   width: 44px;
   stroke: none;
   animation-name: fill;
@@ -501,12 +505,9 @@ svg:hover {
   animation-fill-mode: both;
 }
 
-body {
+.full-page .loading {
   animation-name: no-scroll;
   animation-duration: 3s;
-}
-
-.full-page .loading {
   text-align: center;
   height: 0px;
   background-color: white;

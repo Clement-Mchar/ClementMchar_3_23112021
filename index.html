@@ -13,137 +13,134 @@
     <script src="https://kit.fontawesome.com/7104ef3817.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
 </head>
-    <body>
-        <div class="full-page flex">
-            <div class="loading flex">
-                <div class="spinner flex">
-                    <i class="fas fa-spinner"></i>
-                </div>
+    <body class="full-page flex">
+        <div class="loading flex">
+            <div class="spinner flex">
+                <i class="fas fa-spinner"></i>
             </div>
-                
-                <header class="flex"> 
-                    <div class="logo flex">
-                        ohmyfood
-                    </div>
-                </header>
-                <div class="location flex">
-                     <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-                </div>
-                <div class="explorer flex">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    <button class="flex">
-                        Explorer nos restaurants
-                    </button>
-                </div>
-                <div class="notice flex">
-                    <h2>Fonctionnement</h2>
-                    <ol class="flex">
-                        <li><i class="fas fa-mobile-alt fa-fw"></i><span>Choisissez un restaurant</span></li>
-                        <li><i class="fas fa-list-ul fa-fw"></i><span>Composez votre menu</span></li>
-                        <li><i class="fas fa-store fa-fw"></i><span>Dégustez au restaurant</span></li>
-                    </ol>
-                </div>
-                <section class="Restaurants flex">
-                    <h2>Restaurants</h2>
-                    <div class="cards flex">
-                        <div onclick="location.href='pages/la-palette-du-gout.html';" class="card flex">
-                            <p class="new-restaurant">Nouveau</p>
-                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du Goût">
-                            <div class="card-desc flex">
-                                <div class="crd-txt flex">    
-                                    <h3>La palette du goût</h3>
-                                    <p>Ménilmontant</p>  
-                                </div>
-                                <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
-                                viewBox="-100 -100 800 800">
-                                <defs>
-                                <linearGradient id="lgrad" x2="0" y2="1" >
-                                    <stop offset="0%" stop-color="var(--color-stop-1)" />
-                                    <stop offset="100%" stop-color="var(--color-stop-2)"/>
-                                </linearGradient></defs>
-                                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
-                                12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                            </div>
-                        </div>
-                        <div onclick="location.href='pages/la-note-enchantee.html';" class="card flex">
-                            <p class="new-restaurant">Nouveau</p>
-                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplashrestaurant.jpg" alt="La Note Enchantée">
-                            <div class="card-desc flex">
-                                <div class="crd-txt flex">
-                                    <h3>La note enchantée</h3>
-                                    <p>Charonne</p>
-                                </div>
-                                <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
-                                viewBox="-100 -100 800 800">
-                                <defs>
-                                <linearGradient id="lgrad" x2="0" y2="1" >
-                                    <stop offset="0%" stop-color="var(--color-stop-1)" />
-                                    <stop offset="100%" stop-color="var(--color-stop-2)"/>
-                                </linearGradient></defs>
-                                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
-                                12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                            </div>
-                        </div>
-                        <div onclick="location.href='pages/a-la-francaise.html';" class="card flex">
-                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-                            <div class="card-desc flex">
-                                <div class="crd-txt flex">
-                                    <h3>À la française</h3>
-                                    <p>La Cité Rouge</p>
-                                </div>
-                                    <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
-                                    class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
-                                    viewBox="-100 -100 800 800">
-                                    <defs>
-                                    <linearGradient id="lgrad" x2="0" y2="1" >
-                                        <stop offset="0%" stop-color="var(--color-stop-1)" />
-                                        <stop offset="100%" stop-color="var(--color-stop-2)"/>
-                                    </linearGradient></defs>
-                                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                    96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
-                                    12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                            </div>     
-                        </div>
-                        <div onclick="location.href='pages/le-delice-des-sens.html';" class="card flex">
-                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Délice des sens">
-                            <div class="card-desc flex">
-                                <div class="crd-txt flex">
-                                    <h3>Le délice des sens</h3>
-                                    <p>Folie-Méricourt</p>
-                                </div>
-                                <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
-                                viewBox="-100 -100 800 800">
-                                <defs>
-                                <linearGradient id="lgrad" x2="0" y2="1" >
-                                    <stop offset="0%" stop-color="var(--color-stop-1)" />
-                                    <stop offset="100%" stop-color="var(--color-stop-2)"/>
-                                </linearGradient></defs>
-                                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
-                                12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                            </div> 
-                        
-                        </div>   
-                    </div>
-
-                </section>
-                <footer class="flex">
-                    <div class="logo flex">
-                        ohmyfood
-                    </div>
-                    <ol>
-                        <li class="bolder"><i class="fas fa-utensils fa-fw"></i>Proposer un restaurant</li>
-                        <li class="bolder"><i class="fas fa-handshake fa-fw"></i>Devenir partenaire</li>
-                        <li>Mentions légales</li>
-                        <li>Contact</li>
-                    </ol>
-                </footer>
         </div>
+            
+        <header class="flex"> 
+            <h1 class="logo flex">
+                ohmyfood
+            </h1>
+        </header>
+        <div class="location flex">
+             <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+        </div>
+        <div class="explorer flex">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="flex">
+                Explorer nos restaurants
+            </button>
+        </div>
+        <div class="notice flex">
+            <h2>Fonctionnement</h2>
+            <ol class="flex">
+                <li><i class="fas fa-mobile-alt fa-fw"></i><span>Choisissez un restaurant</span></li>
+                <li><i class="fas fa-list-ul fa-fw"></i><span>Composez votre menu</span></li>
+                <li><i class="fas fa-store fa-fw"></i><span>Dégustez au restaurant</span></li>
+            </ol>
+        </div>
+        <section class="Restaurants flex">
+            <h2>Restaurants</h2>
+            <div class="cards flex">
+                <div onclick="location.href='pages/la-palette-du-gout.html';" class="card flex">
+                    <p class="new-restaurant">Nouveau</p>
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du Goût">
+                    <div class="card-desc flex">
+                        <div class="crd-txt flex">    
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>  
+                        </div>
+                        <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
+                        class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="-100 -100 800 800">
+                        <defs>
+                        <linearGradient class="lgrad" x2="0" y2="1" >
+                            <stop offset="0%" stop-color="var(--color-stop-1)" />
+                            <stop offset="100%" stop-color="var(--color-stop-2)"/>
+                        </linearGradient></defs>
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                        96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
+                        12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                    </div>
+                </div>
+                <div onclick="location.href='pages/la-note-enchantee.html';" class="card flex">
+                    <p class="new-restaurant">Nouveau</p>
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplashrestaurant.jpg" alt="La Note Enchantée">
+                    <div class="card-desc flex">
+                        <div class="crd-txt flex">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
+                        class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="-100 -100 800 800">
+                        <defs>
+                        <linearGradient class="lgrad" x2="0" y2="1" >
+                            <stop offset="0%" stop-color="var(--color-stop-1)" />
+                            <stop offset="100%" stop-color="var(--color-stop-2)"/>
+                        </linearGradient></defs>
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                        96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
+                        12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                    </div>
+                </div>
+                <div onclick="location.href='pages/a-la-francaise.html';" class="card flex">
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                    <div class="card-desc flex">
+                        <div class="crd-txt flex">
+                            <h3>À la française</h3>
+                            <p>La Cité Rouge</p>
+                        </div>
+                            <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
+                            class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="-100 -100 800 800">
+                            <defs>
+                            <linearGradient class="lgrad" x2="0" y2="1" >
+                                <stop offset="0%" stop-color="var(--color-stop-1)" />
+                                <stop offset="100%" stop-color="var(--color-stop-2)"/>
+                            </linearGradient></defs>
+                            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                            96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
+                            12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                    </div>     
+                </div>
+                <div onclick="location.href='pages/le-delice-des-sens.html';" class="card flex">
+                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Délice des sens">
+                    <div class="card-desc flex">
+                        <div class="crd-txt flex">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
+                        class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="-100 -100 800 800">
+                        <defs>
+                        <linearGradient class="lgrad" x2="0" y2="1" >
+                            <stop offset="0%" stop-color="var(--color-stop-1)" />
+                            <stop offset="100%" stop-color="var(--color-stop-2)"/>
+                        </linearGradient></defs>
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                        96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
+                        12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                    </div> 
+                
+                </div>   
+            </div>
+        </section>
+        <footer class="flex">
+            <div class="logo flex">
+                ohmyfood
+            </div>
+            <ol>
+             <li class="bolder"><i class="fas fa-utensils fa-fw"></i>Proposer un restaurant</li>
+                <li class="bolder"><i class="fas fa-handshake fa-fw"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li><a href="mailto: clement.mchar@gmail.com">Contact</a></li>
+            </ol>
+        </footer>
     </body>
 </html>

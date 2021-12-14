@@ -1,4 +1,4 @@
-#lgrad{
+.lgrad{
     --color-stop-1:rgb(129,91,175);
     --color-stop-2: rgb(255,121,218);
 }
@@ -9,7 +9,7 @@ svg{
 
     fill: $clr-gray-light;
     &:hover{
-        fill:url(#lgrad);
+        fill:url(.lgrad);
         width: 44px;
         stroke:none;
         animation-name: fill;

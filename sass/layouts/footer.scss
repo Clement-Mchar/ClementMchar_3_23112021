@@ -17,9 +17,14 @@ footer {
         }
         li{
             padding-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
             
             i{
                 padding-right: 15px;
+                
             }
         }
     }
