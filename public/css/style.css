@@ -195,7 +195,6 @@ section .cards .card {
   width: 90%;
   height: 280px;
   border-radius: 25px;
-  max-width: 420px;
   box-shadow: #cecece 2px 4px 12px 0px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -216,18 +215,6 @@ section .cards .card .new-restaurant {
 section .cards .card .card-desc {
   flex-direction: row;
   justify-content: space-between;
-}
-section .cards .card:nth-child(1) img {
-  object-position: 0px -48px;
-}
-section .cards .card:nth-child(2) img {
-  object-position: 0px -150px;
-}
-section .cards .card:nth-child(3) img {
-  object-position: 0px -47px;
-}
-section .cards .card:nth-child(4) img {
-  object-position: 0px -44px;
 }
 section .cards .card img {
   object-fit: cover;
@@ -536,6 +523,66 @@ body {
   vertical-align: middle;
 }
 
+@media screen and (min-width: 580px) {
+  body .cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body .cards .card {
+    width: 44%;
+    height: 300px;
+  }
+  body .cards .card img {
+    height: 230px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .notice {
+    width: 95%;
+    padding-bottom: 0px;
+  }
+  body .notice ol {
+    flex-direction: row;
+    padding-left: 0px;
+  }
+  body .notice ol li {
+    width: 333px;
+    margin-left: 40px;
+  }
+  body .notice ol li i {
+    display: none;
+  }
+  body .menu-full-page img {
+    width: 80%;
+    border-radius: 25px;
+    height: 700px;
+    align-self: center;
+  }
+  body .menu-full-page .menu .titles {
+    align-self: center;
+    font-size: 20px;
+  }
+  body .menu-full-page .menu .titles::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 86%;
+  }
+  body .menu-full-page .menu .display {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body .menu-full-page .menu .display .dishes {
+    width: 30%;
+    min-width: 21%;
+    height: 120px;
+    align-items: center;
+  }
+  body .menu-full-page .menu .display .dishes:hover .check {
+    height: 143px;
+  }
+}
 .flex {
   display: flex;
   flex-direction: column;
