@@ -13,124 +13,122 @@
     <script src="https://kit.fontawesome.com/7104ef3817.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
 </head>
-    <body>
-        <div class="menu-full-page flex">
+    <body class="menu-full-page flex">
+        <header class="logo flex">
+            <span class="arrow" onclick="location.href='../index.html';"><i class="fas fa-arrow-left"></i></span>
+            <h1>ohmyfood</h1>
+        </header>
 
-            <header class="logo flex">
-                <span class="arrow" onclick="location.href='../index.html';"><i class="fas fa-arrow-left"></i></span>
-                <h2>ohmyfood</h2>
-            </header>
-            <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Délice des sens">
-            <div class="menu flex">
-                <div class="name flex">Le délice des sens<span class="heart">
-                    <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
-                    class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="-100 -100 800 800">
-                    <defs>
-                    <linearGradient class="lgrad" x2="0" y2="1" >
-                        <stop offset="0%" stop-color="var(--color-stop-1)" />
-                        <stop offset="100%" stop-color="var(--color-stop-2)"/>
-                    </linearGradient></defs>
-                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
-                    96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
-                    12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg></span>
-                </div>
-                <div class="titles entry">Entrées</div>
-                <div class="display flex">
-                    <div class="dishes anim_1 flex">
-                        <div class="dish flex">
-                            <h3>Tartare de thon</h3>
-                            <p>Assaisonné au yuzu</p>
-                        </div>
-                        <span class="price">25€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>     
-                    </div>
-                    <div class="dishes anim_2 flex">
-                        <div class="dish flex">
-                            <h3>Bouchée de homard croustillant</h3>
-                            <p>Et sa farandole de petits légumes</p>
-                        </div>
-                        <span class="price">35€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="dishes anim_3 flex">
-                        <div class="dish flex">
-                            <h3>Velouté de cèpes</h3>
-                            <p>Aux truffes</p>
-                        </div>
-                        <span class="price">20€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                </div>
-                <div class="titles meal">Plats</div>
-                <div class="display flex">
-                    <div class="dishes anim_4 flex">
-                        <div class="dish flex">
-                            <h3>Poulet rôti aux herbes de provence</h3>
-                            <p>Et sa crème de truffe</p>
-                        </div>
-                        <span class="price">40€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>     
-                    </div>
-                    <div class="dishes anim_5 flex">
-                        <div class="dish flex">
-                            <h3>Langouste rôtie</h3>
-                            <p>Et ses légumes de saison</p>
-                        </div>
-                        <span class="price">35€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="dishes anim_6 flex">
-                        <div class="dish flex">
-                            <h3>Côte de boeuf angus</h3>
-                            <p>Et sa purée de panais</p>
-                        </div>
-                        <span class="price">44€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                </div>
-                <div class="titles dessert">Desserts</div>
-                <div class="display flex">
-                    <div class="dishes anim_7 flex">
-                        <div class="dish flex">
-                            <h3>Farandole de desserts</h3>
-                            <p>Du chef</p>
-                        </div>
-                        <span class="price">18€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>     
-                    </div>
-                    <div class="dishes anim_8 flex">
-                        <div class="dish flex">
-                            <h3>Crème brulée</h3>
-                            <p>Revisitée</p>
-                        </div>
-                        <span class="price">22€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="dishes anim_9 flex">
-                        <div class="dish flex">
-                            <h3>Tiramisu</h3>
-                            <p>À la noisette</p>
-                        </div>
-                        <span class="price">23€</span>
-                        <div class="check flex"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                </div>
-                <button class="flex">
-                    Commander
-                </button>
+        <span class="img-menu"><img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Délice des sens"></span>
+        <section class="menu flex">
+            <div class="name flex">Le délice des sens<span class="heart">
+                <svg aria-hidden="true" fill="currentColor" focusable="false" data-prefix="fas" data-icon="heart" 
+                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
+                viewBox="-100 -100 800 800">
+                <defs>
+                <linearGradient id="lgrad" x2="0" y2="1" >
+                    <stop offset="0%" stop-color="var(--color-stop-1)" />
+                    <stop offset="100%" stop-color="var(--color-stop-2)"/>
+                </linearGradient></defs>
+                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+                96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 
+                12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg></span>
             </div>
-            <footer class="flex">
-                <div class="logo flex">
-                    ohmyfood
+            <div class="titles entry">Entrées</div>
+            <div class="display flex">
+                <div class="dishes anim_1 flex">
+                    <div class="dish flex">
+                        <h3>Tartare de thon</h3>
+                        <p>Assaisonné au yuzu</p>
+                    </div>
+                    <span class="price">25€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>     
                 </div>
-                <ol>
-                    <li class="bolder"><i class="fas fa-utensils fa-fw"></i>Proposer un restaurant</li>
-                    <li class="bolder"><i class="fas fa-handshake fa-fw"></i>Devenir partenaire</li>
-                    <li>Mentions légales</li>
-                    <li>Contact</li>
-                </ol>
-            </footer>
-        </div>
+                <div class="dishes anim_2 flex">
+                    <div class="dish flex">
+                        <h3>Bouchée de homard croustillant</h3>
+                        <p>Et sa farandole de petits légumes</p>
+                    </div>
+                    <span class="price">35€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="dishes anim_3 flex">
+                    <div class="dish flex">
+                        <h3>Velouté de cèpes</h3>
+                        <p>Aux truffes</p>
+                    </div>
+                    <span class="price">20€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+            <div class="titles meal">Plats</div>
+            <div class="display flex">
+                <div class="dishes anim_4 flex">
+                    <div class="dish flex">
+                        <h3>Poulet rôti aux herbes de provence</h3>
+                        <p>Et sa crème de truffe</p>
+                    </div>
+                    <span class="price">40€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>     
+                </div>
+                <div class="dishes anim_5 flex">
+                    <div class="dish flex">
+                        <h3>Langouste rôtie</h3>
+                        <p>Et ses légumes de saison</p>
+                    </div>
+                    <span class="price">35€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="dishes anim_6 flex">
+                    <div class="dish flex">
+                        <h3>Côte de boeuf angus</h3>
+                        <p>Et sa purée de panais</p>
+                    </div>
+                    <span class="price">44€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+            <div class="titles dessert">Desserts</div>
+            <div class="display flex">
+                <div class="dishes anim_7 flex">
+                    <div class="dish flex">
+                        <h3>Farandole de desserts</h3>
+                        <p>Du chef</p>
+                    </div>
+                    <span class="price">18€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>     
+                </div>
+                <div class="dishes anim_8 flex">
+                    <div class="dish flex">
+                        <h3>Crème brulée</h3>
+                        <p>Revisitée</p>
+                    </div>
+                    <span class="price">22€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="dishes anim_9 flex">
+                    <div class="dish flex">
+                        <h3>Tiramisu</h3>
+                        <p>À la noisette</p>
+                    </div>
+                    <span class="price">23€</span>
+                    <div class="check flex"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+            <button class="flex">
+                Commander
+            </button>
+        </section>
+        <footer class="flex">
+            <div class="logo flex">
+                ohmyfood
+            </div>
+            <ol>
+                <li class="bolder"><i class="fas fa-utensils fa-fw"></i>Proposer un restaurant</li>
+                <li class="bolder"><i class="fas fa-handshake fa-fw"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li>Contact</li>
+            </ol>
+        </footer>
     </body>
 </html>

@@ -5,6 +5,7 @@
 img {
     width: 100%;
     max-width: 100%;
+    object-fit: cover;
 }
 header{
     background-color: white;
@@ -19,7 +20,7 @@ header{
         font-size: 22px;
         cursor: pointer;
     }
-    h2{
+    h1{
         font-family: $logo-font;
         font-weight: 500;
         font-size: 28px;

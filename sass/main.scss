@@ -8,18 +8,7 @@
 @import"./layouts/restaurants.scss";
 @import"./layouts/footer.scss";
 @import"./layouts/menus.scss";
-@import"./layouts/heart.scss";
-@import"./layouts/loading-spinner.scss";
+@import"./components/heart.scss";
+@import"./components/loading-spinner.scss";
 @import"./layouts/media queries.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
-
-.flex {
-    display:flex;
-    flex-direction: column;
-}
-ol{
-    list-style: none;
-}
-header{
-    background: white;
-}
+@import"./base/base.scss";
